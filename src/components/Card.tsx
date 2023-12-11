@@ -1,4 +1,5 @@
 import { useId } from "react";
+import "./Card.css";
 
 interface Props {
   title: string;
@@ -9,7 +10,7 @@ interface Props {
 
 export default function Card({ title, icon, description, image }: Props) {
   const id = useId();
-  
+
   return (
     <>
       <input type="radio" name="slide" id={id} />
